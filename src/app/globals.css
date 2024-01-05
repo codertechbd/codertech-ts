@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "kroppen";
+  src: url(../../public/fonts/Kroppen-Round-Bold.ttf);
+}
+.kroppen {
+  font-family: "kroppen";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 90% !important;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1250px) {
+  .container {
+    max-width: 1250px !important;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #5b00ce 0%, #dc02ce 100%);
+}
+
+.animation-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(91, 0, 206, 0.7); /* Updated shadow color */
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px rgba(91, 0, 206, 0); /* Updated shadow color */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(91, 0, 206, 0.7); /* Updated shadow color */
+  }
+}
+
+
